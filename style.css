@@ -62,6 +62,7 @@ header{
 }
 
 .slide-img{
+    display: block;
     position: absolute;
     max-width: 200px;
     height: auto;
@@ -72,6 +73,7 @@ header{
 }
 
 .slide-img2{
+    display: block;
     position: absolute;
     max-width: 200px;
     height: auto;
@@ -79,6 +81,7 @@ header{
     top: 210px;
 }
 .slide-img3{
+    display: block;
     position: absolute;
     max-width: 200px;
     height: auto;
@@ -473,6 +476,17 @@ footer{
         margin-bottom: 10px;
         
     }
+
+    .slide-img{
+        display:none;
+    }
+    .slide-img2{
+        display:none;
+    }
+    .slide-img3{
+        display:none;
+    }
+   
 
 
 
