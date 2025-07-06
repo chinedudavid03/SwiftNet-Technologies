@@ -17,8 +17,6 @@ header{
     background-color:var(--primary); 
     width: 100%;
     align-items: center;
-    
-    
 }
 
 .header-logo{
@@ -31,8 +29,6 @@ header{
     object-fit: cover;
     border-radius: 100px;
     margin-left: 10px;
-    
-
 }
 
 
@@ -80,6 +76,7 @@ header{
     left: 790px;
     top: 210px;
 }
+
 .slide-img3{
     display: block;
     position: absolute;
@@ -115,6 +112,7 @@ span{
     top: 420px;
     margin-left: 150px;
     align-items: center;
+     animation: pointdown 1000MS infinite alternate-reverse ;
 }
 
 #cta-button{
@@ -122,8 +120,8 @@ span{
     font-family: 'Times New Roman', Times, serif;
     background:black;
     border:none;
-    color: white;
     padding: 10px;
+    color: white;
     border-radius: 20px;
      cursor: pointer;
     transition:  transform 0.5s ease;
@@ -164,10 +162,6 @@ span{
     font-family: 'Times New Roman', Times, serif;
 }
 
-
-
-
-
 .card{
     color: white;
     background-color: var(--primary);
@@ -201,8 +195,6 @@ span{
     font-size: 35px;
     padding: 5px;
     margin-left: 50px;
-    
-
 }
 
 .card1{
@@ -257,7 +249,6 @@ span{
     background-color: black;
     color: white;
     cursor: pointer;
-    
 }
 
 .learn-more-2{
@@ -272,7 +263,6 @@ span{
     background-color: black;
     color: white;
     cursor: pointer;
-   
 }
 
 .learn-more-3{
@@ -287,7 +277,6 @@ span{
     background-color: black;
     color: white;
     cursor: pointer;
-    
 }
 
 .learn-more-4{
@@ -302,7 +291,6 @@ span{
     background-color: black;
     color: white;
     cursor: pointer;
-    
 }
 
 .learn-more-5{
@@ -317,7 +305,6 @@ span{
     background-color: black;
     color: white;
     cursor: pointer;
-   
 }
 
 .learn-more-6{
@@ -331,8 +318,7 @@ span{
     padding: 15px;
     background-color: black;
     color: white;
-    cursor: pointer;
-    
+    cursor: pointer
 }
 
 .button-services{
@@ -344,7 +330,6 @@ footer{
     background-color: var(--primary);
     height: 100%;
     margin-top: 50px;
-
 }
 
 .footer-para{
@@ -356,12 +341,9 @@ footer{
     font-weight: bolder;
     color: white;
     padding-top: 20px;
-   
-    
-    
 }
 
-.SN{
+.SN-footer{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
@@ -369,10 +351,9 @@ footer{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     color: white;
-    
 }
 
-.Terms{
+.Terms-footer{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
@@ -385,6 +366,16 @@ footer{
     
 
 }
+
+@keyframes pointdown{
+    0%{
+         transform: translateY(0);
+
+    }
+    100%{
+       transform: translateY(50px);
+    }
+} 
 
 @keyframes fadeIn {
     from{
@@ -399,7 +390,7 @@ footer{
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 450px) {
     header{
     flex-direction: column;
     align-items:center;
@@ -409,31 +400,43 @@ footer{
 
    
     .nav-items{
+        display: flex;
         flex-direction: column;
+        align-items: start;
         gap: 15px;
     }
 
     .hero-h1{
-        font-size: 60px;
+        font-size: 40px;
         padding-top: 160px;
         margin-left: 5px;
     }
 
     .para-hero{
-        padding-top: 150px;
-        
+        padding-top: 200px;
     }
 
     .button-hero{
-        padding-top: 250px;
+        padding-top: 300px;
+        
+        
+    }
+    .button-hero{
+        margin-left: 50px;
     }
 
 
     .flex-container{
         flex-direction: column;
         align-content: center;
+        margin-left: 20px;
+        padding-right: 30px;
     }
 
+    .card{
+        width:400px;
+        height: 450px;
+    }
     .learn-more-1{
         align-items:center;
         left: 100px;
